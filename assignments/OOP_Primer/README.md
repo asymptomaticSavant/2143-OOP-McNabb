@@ -31,8 +31,7 @@
         <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
             bool myClass
             {
 	            return 1;        //one is a boolean value
@@ -52,11 +51,11 @@
         variable would remain the same.
 
         - Also known as class members or class instances.
-                <details><summary>CODE</summary>
+        
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
             bool myClass
             {
                 int classVariable = 1;
@@ -81,10 +80,10 @@
  
         - There can be multiple overloaded constructors. The 'default' constructor with no parameters runs automatically, others will run upon being supplied with the proper parameters when the class is declared as an object.
 
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
             bool myClass
             {
                 myClass() //default constructor
@@ -116,10 +115,10 @@
        
         - There are arguments that this breaks OOP; ignore them.
 
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	friend class mySecondClass;
@@ -147,10 +146,10 @@
  
         - Inheritance is mainly done when one class is meant to be a more specific version of a base class (often defined as a is-a type relationship). For example, a base class of 'car', with a derived class of 'miata'; the parent class could have variables such as gas tank, mph, etc., which the child class could inherit, and modify to be more accurate to its specificity (a miata **is** a type of vehicle).
         
+        <details><summary>CODE</summary>        
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	//...
@@ -172,10 +171,10 @@
     > **Instance Variable**
         - A member variable that has a separate instance (copy) for every seperate object of the class it exists within.
 
+        <details><summary>CODE</summary>
         <p>
-
-
-        ```r
+        
+        ```cpp
         bool myClass
         {
             public:
@@ -202,10 +201,10 @@
     > **Member Variable**
         - A variable declared/instantiated and defined in a class.
 
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	int memberVariable = 1;
@@ -226,10 +225,10 @@
  
         - See overloading; it's an important aspect. Also see constructor, a special type of method.
 
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	int method()
@@ -265,10 +264,10 @@
  
         - Can lead to priority issues, issues of calling the same class more than once, and general confusion (see the diamond problem for a notable example of multiple inheritance layout that leads to issues).
 
-                <p>
+        <details><summary>CODE</summary>
+        <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	//...
@@ -299,11 +298,10 @@
  
         - Not wholly dissimilar to variables in some manners of usage, the difference being that they can contain so much more than a single value, seeing as they can contain an number of their own variables, in addition to methods.
 
-        
+        <details><summary>CODE</summary>        
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
             //...
@@ -330,11 +328,10 @@
  
         - Example: Overloading a square root method, so that one receives integers, and one receives doubles.
 
-        
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	int method()
@@ -369,11 +366,10 @@
         -   Using this as a example-- public sets the variable/method as accessible to anyone, private sets the variable/method
         as accessible only inside the class or to other classes using the friend keyword, and protected sets the variable/method as accessible only inside the class and to inheritors.
 
-        
+        <details><summary>CODE</summary>
         <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	public:
@@ -393,11 +389,11 @@
  
     > **Static**
         - A keyword that is used to label variables or methods, so that across all instances of themselves, their contents remain the same; if a variable is declared static in a class, and any object changes the value of that variable, printing the variable from any other object would print the changed value.
-   
+
+       <details><summary>CODE</summary>
        <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	static int staticVariable  = 1;
@@ -417,11 +413,10 @@
  
         - In the case that virtual methods are the aforementioned shells without any implementation, they are coined 'pure virtual' methods, which makes the class that contains them a pure virtual class; such a class cannot be called as an object, and can only be inherited by other classes.
 
-        
-                <p>
+        <details><summary>CODE</summary>
+        <p>
 
-
-        ```r
+        ```cpp
         bool myClass
         {
         	virtual int method()
